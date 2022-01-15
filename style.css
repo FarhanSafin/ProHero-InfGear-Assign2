@@ -260,12 +260,73 @@ footer{
 }
 
 
-  /* RESPONSIVE LAYOUT */
-  @media (max-width: 400px) {
+  /* MEDIA QUERIES */
+
+  /* MOBILE */
+
+  @media only screen and (max-width: 688px) {
+
+      .banner{
+          display: flex;
+          flex-direction: column-reverse;
+      }
+      .container>h1{
+          margin-left: 15.5%;
+
+      }
+      .banner-left>h1{
+          text-align: center;
+      }
+      .banner-left>p{
+          text-align: center;
+      }
+      button{
+          align-self: center;
+      }
+      .fade_rule{
+          display: none;
+      }
+      .text-more{
+          padding-left: 60%;
+      }
+      .company-logo{
+          display: flex;
+          margin-top: 80px;
+          flex-direction: row;
+          flex-wrap: wrap;
+          align-content: flex-start;
+          justify-content: center;
+          align-items: center;
+}
+.com-log{
+    align-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+.items{
+    display: flex;
+    gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+      .banner-right{
+        background-size: 55%;
+        background-position-y: 40%;
+        background-position-x: 55%;
+      }
+      .dslr{
+          padding-left: 0px;
+      }
+      .nav-bar{
+          display: none;
+      }
     .side, .middle {
       width: 100%;
     }
     .right {
       display: none;
     }
-  }
+}
